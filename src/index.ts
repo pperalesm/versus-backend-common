@@ -4,6 +4,7 @@ import { ErrorsFilter } from "./common/filters/errors.filter";
 import { JwtGqlGuard } from "./common/guards/jwt-gql.guard";
 import { ThrottlerGqlGuard } from "./common/guards/throttler-gql.guard";
 import { AuthUser } from "./common/models/auth-user.model";
+import { DateRange } from "./common/models/date-range.model";
 import { IntRange } from "./common/models/int-range.model";
 import { Pagination } from "./common/models/pagination.model";
 import { Sorting } from "./common/models/sorting.model";
@@ -15,6 +16,7 @@ export {
   Sorting,
   Pagination,
   IntRange,
+  DateRange,
   AuthUser,
   ThrottlerGqlGuard,
   JwtGqlGuard,
