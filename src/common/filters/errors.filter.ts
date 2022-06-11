@@ -26,7 +26,7 @@ import {
 import { GqlExceptionFilter } from "@nestjs/graphql";
 
 @Catch()
-export class ErrorFilter implements GqlExceptionFilter {
+export class ErrorsFilter implements GqlExceptionFilter {
   catch(exception: any) {
     console.error(">>>>>>>>>>>>>>>>>>>");
     console.error(exception);
