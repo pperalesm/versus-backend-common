@@ -1,3 +1,4 @@
+import { CommonConstants } from "./common/common-constants";
 import { CommonModule } from "./common/common.module";
 import { AuthenticatedUser } from "./common/decorators/authenticated-user.decorator";
 import { Roles } from "./common/decorators/roles.decorator";
@@ -26,4 +27,5 @@ export {
   ErrorsFilter,
   AuthenticatedUser,
   Roles,
+  CommonConstants,
 };
