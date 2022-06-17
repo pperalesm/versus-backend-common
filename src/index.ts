@@ -3,6 +3,7 @@ import { CommonModule } from "./common/common.module";
 import { AuthenticatedUser } from "./common/decorators/authenticated-user.decorator";
 import { Roles } from "./common/decorators/roles.decorator";
 import { ErrorsFilter } from "./common/filters/errors.filter";
+import { ActiveGqlGuard } from "./common/guards/active-gql.guard";
 import { JwtGqlGuard } from "./common/guards/jwt-gql.guard";
 import { RolesGqlGuard } from "./common/guards/roles-gql.guard";
 import { ThrottlerGqlGuard } from "./common/guards/throttler-gql.guard";
@@ -23,6 +24,7 @@ export {
   AuthUser,
   ThrottlerGqlGuard,
   JwtGqlGuard,
+  ActiveGqlGuard,
   RolesGqlGuard,
   ErrorsFilter,
   AuthenticatedUser,
