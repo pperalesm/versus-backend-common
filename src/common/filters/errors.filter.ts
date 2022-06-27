@@ -38,81 +38,81 @@ export class ErrorsFilter implements GqlExceptionFilter {
         : HttpStatus.INTERNAL_SERVER_ERROR;
 
     if (status === HttpStatus.BAD_REQUEST) {
-      throw new BadRequestException();
+      return new BadRequestException();
     }
 
     if (status === HttpStatus.UNAUTHORIZED) {
-      throw new UnauthorizedException();
+      return new UnauthorizedException();
     }
 
     if (status === HttpStatus.NOT_FOUND) {
-      throw new NotFoundException();
+      return new NotFoundException();
     }
 
     if (status === HttpStatus.FORBIDDEN) {
-      throw new ForbiddenException();
+      return new ForbiddenException();
     }
 
     if (status === HttpStatus.NOT_ACCEPTABLE) {
-      throw new NotAcceptableException();
+      return new NotAcceptableException();
     }
 
     if (status === HttpStatus.REQUEST_TIMEOUT) {
-      throw new RequestTimeoutException();
+      return new RequestTimeoutException();
     }
 
     if (status === HttpStatus.CONFLICT) {
-      throw new ConflictException();
+      return new ConflictException();
     }
 
     if (status === HttpStatus.GONE) {
-      throw new GoneException();
+      return new GoneException();
     }
 
     if (status === HttpStatus.HTTP_VERSION_NOT_SUPPORTED) {
-      throw new HttpVersionNotSupportedException();
+      return new HttpVersionNotSupportedException();
     }
 
     if (status === HttpStatus.PAYLOAD_TOO_LARGE) {
-      throw new PayloadTooLargeException();
+      return new PayloadTooLargeException();
     }
 
     if (status === HttpStatus.UNSUPPORTED_MEDIA_TYPE) {
-      throw new UnsupportedMediaTypeException();
+      return new UnsupportedMediaTypeException();
     }
 
     if (status === HttpStatus.UNPROCESSABLE_ENTITY) {
-      throw new UnprocessableEntityException();
+      return new UnprocessableEntityException();
     }
 
     if (status === HttpStatus.NOT_IMPLEMENTED) {
-      throw new NotImplementedException();
+      return new NotImplementedException();
     }
 
     if (status === HttpStatus.I_AM_A_TEAPOT) {
-      throw new ImATeapotException();
+      return new ImATeapotException();
     }
 
     if (status === HttpStatus.METHOD_NOT_ALLOWED) {
-      throw new MethodNotAllowedException();
+      return new MethodNotAllowedException();
     }
 
     if (status === HttpStatus.BAD_GATEWAY) {
-      throw new BadGatewayException();
+      return new BadGatewayException();
     }
 
     if (status === HttpStatus.SERVICE_UNAVAILABLE) {
-      throw new ServiceUnavailableException();
+      return new ServiceUnavailableException();
     }
 
     if (status === HttpStatus.GATEWAY_TIMEOUT) {
-      throw new GatewayTimeoutException();
+      return new GatewayTimeoutException();
     }
 
     if (status === HttpStatus.PRECONDITION_FAILED) {
-      throw new PreconditionFailedException();
+      return new PreconditionFailedException();
     }
 
-    throw new InternalServerErrorException();
+    return new InternalServerErrorException();
   }
 }
