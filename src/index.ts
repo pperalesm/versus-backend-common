@@ -9,6 +9,11 @@ import { JwtGqlGuard } from "./common/guards/jwt-gql.guard";
 import { RolesGqlGuard } from "./common/guards/roles-gql.guard";
 import { ThrottlerGqlGuard } from "./common/guards/throttler-gql.guard";
 import { AuthUser } from "./common/models/auth-user.model";
+import {
+  BrokerEvent,
+  BrokerEventDocument,
+  BrokerEventSchema,
+} from "./common/models/broker-event.entity";
 import { CreatedEvent } from "./common/models/created-event.model";
 import { DateRange } from "./common/models/date-range.model";
 import { DeletedEvent } from "./common/models/deleted-event.model";
@@ -38,4 +43,7 @@ export {
   CreatedEvent,
   DeletedEvent,
   UpdatedEvent,
+  BrokerEvent,
+  BrokerEventDocument,
+  BrokerEventSchema,
 };
